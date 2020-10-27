@@ -1,0 +1,22 @@
+<li class="countries__list-item">
+    <h2 class="countries__list-header">{{name}}</h2>
+    <div class="countries__list-box">
+        <ul class="countries__list__list">
+            <li>
+                <span class="item-parag">Capital:</span> {{ capital }}
+            </li>
+            <li>
+                <span class="item-parag">Population:</span> {{ population }}
+            </li>
+            <li>
+                <span class="item-parag">Languages:</span>
+                <ul>
+                    {{#each languages}}
+                    <li>{{ name }}</li>
+                    {{/each}}
+                </ul>
+            </li>
+        </ul>
+        <img src={{ flag }} alt={{ name }} class="countries__list-img">
+    </div>
+</li>

@@ -1,0 +1,168 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    background-color: rgba(231, 241, 241, 0.705);
+  }
+
+
+
+
+.countries__list__list {
+  list-style: none;
+}
+.countries__list-item {
+  padding: 10px;
+  list-style: none;
+  max-width: 80%;
+}
+
+.countries__list-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.item-parag {
+  font-weight: 700;
+}
+
+/* .countries__list-box {
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+
+.countries__list-img {
+  display: block;
+  width: 500px;
+  max-width: 70%;
+  border: 1px solid grey;
+}
+
+.countries__list-header {
+  text-align: center;
+}
+
+#input {
+  padding: 15px;
+  max-width: 600px;
+  width: 40%;
+  background-color: rgb(215, 245, 245);
+  border: 3px solid grey;
+  border-radius: 5px;
+}
+
+.form {
+  margin-left: 25px;
+  margin-top: 25px;
+  display: flex;
+}
+
+.pnotify {
+  color: #fff;
+  max-width: 500px;
+  width: 40%;
+  padding: 10px;
+  border: 0px solid black;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom right, rgb(250, 10, 58), rgb(202, 9, 48), rgb(153, 9, 38), rgb(105, 8, 28), rgb(56, 8, 18), rgb(8, 7, 8), rgb(46, 7, 8), rgb(84, 8, 8), rgb(123, 8, 9), rgb(161, 8, 9), rgb(199, 9, 9), rgb(237, 9, 9));
+
+}
+
+@media screen and (max-width: 400px) {
+  #input {
+    width: 70%;
+  }
+
+  .pnotify {
+    font-size: 12px;
+    height: 70px;
+    white-space: pre-line;
+    width: 250px;
+    max-width: 80%;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width:767px) {
+   .pnotify{
+       width: 250px;
+       font-size: 12px;
+       white-space: pre-line;
+       margin-left: 25px;
+   }
+     #input {
+       width: 55%;
+     }
+   .countries__list-img {
+     margin-top: 10px;
+   }
+
+}
+
+@media screen and (min-width: 768px) {
+  .pnotify {
+    position: absolute;
+    width: 280px;
+    top:25px;
+    left: 350px;
+    white-space: pre-line;
+  }
+
+  .countries__list-box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .countries__list-item {
+    border: 2px dotted grey;
+    border-radius: 10px
+  }
+}
+
+@media screen and (min-width: 815px) {
+  .pnotify {
+    left: 400px;
+  }
+}
+
+@media screen and (min-width: 925px) {
+  .pnotify {
+    left: 450px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .pnotify {
+    left: 500px;
+  }
+}
+
+@media screen and (min-width: 1125px) {
+  .pnotify {
+    left: 600px;
+  }
+}
+
+@media screen and (min-width: 1425px) {
+  .pnotify {
+    left: 800px;
+  }
+}
+
+.countries-list-item {
+    font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
