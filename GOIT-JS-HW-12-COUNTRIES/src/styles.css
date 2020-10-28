@@ -35,11 +35,6 @@ body {
   font-weight: 700;
 }
 
-/* .countries__list-box {
-  display: flex;
-  justify-content: space-evenly;
-} */
-
 
 .countries__list-img {
   display: block;
@@ -67,39 +62,20 @@ body {
   display: flex;
 }
 
-.pnotify {
-  color: #fff;
-  max-width: 500px;
-  width: 40%;
-  padding: 10px;
-  border: 0px solid black;
-  border-radius: 3px;
-  background-image: linear-gradient(to bottom right, rgb(250, 10, 58), rgb(202, 9, 48), rgb(153, 9, 38), rgb(105, 8, 28), rgb(56, 8, 18), rgb(8, 7, 8), rgb(46, 7, 8), rgb(84, 8, 8), rgb(123, 8, 9), rgb(161, 8, 9), rgb(199, 9, 9), rgb(237, 9, 9));
-
-}
-
 @media screen and (max-width: 400px) {
   #input {
     width: 70%;
   }
 
-  .pnotify {
+  .pnotify-container {
     font-size: 12px;
-    height: 70px;
-    white-space: pre-line;
-    width: 250px;
-    max-width: 80%;
-    margin-left: 15px;
+    padding: 10px;
+    max-width: 90%;
   }
+
 }
 
 @media screen and (min-width: 401px) and (max-width:767px) {
-   .pnotify{
-       width: 250px;
-       font-size: 12px;
-       white-space: pre-line;
-       margin-left: 25px;
-   }
      #input {
        width: 55%;
      }
@@ -109,14 +85,8 @@ body {
 
 }
 
+
 @media screen and (min-width: 768px) {
-  .pnotify {
-    position: absolute;
-    width: 280px;
-    top:25px;
-    left: 350px;
-    white-space: pre-line;
-  }
 
   .countries__list-box {
     display: flex;
@@ -129,19 +99,22 @@ body {
   }
 }
 
-@media screen and (min-width: 815px) {
+
+@media screen and (max-width: 767px) {
   .pnotify {
-    left: 400px;
+    margin-top: 80px;
+    left: 40px;
   }
 }
 
-@media screen and (min-width: 925px) {
+@media screen and (min-width: 768px) {
   .pnotify {
-    left: 450px;
+    left: 410px;
   }
 }
 
-@media screen and (min-width: 1025px) {
+
+@media screen and (min-width: 1000px) {
   .pnotify {
     left: 500px;
   }

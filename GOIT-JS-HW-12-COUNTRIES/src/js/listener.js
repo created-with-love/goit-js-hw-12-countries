@@ -18,8 +18,7 @@ function onInputFieldFIll(e) {
     .then((countries) => {
       renderCountryCard(countries);
     })
-    .catch(onFetchError)
-    .finally(() => refs.form.reset());
+    .catch(onFetchError);
 }
 
 function onFetchError(error) {
@@ -32,13 +31,11 @@ function renderCountryCard(countries) {
   }
   if (countries.length < 10 && countries.length > 1) {
     err.hideError();
-    const markup = countriesListTml(countries);
-    refs.countriesList.innerHTML = markup;
+    refs.countriesList.innerHTML = countriesListTml(countries);
   }
 
   if (countries.length === 1) {
     err.hideError();
-    const markup = countryCardTmpl(countries[0]);
-    refs.countriesList.innerHTML = markup;
+    refs.countriesList.innerHTML = countryCardTmpl(countries[0]);
   }
 }
