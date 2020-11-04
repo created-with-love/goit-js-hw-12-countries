@@ -1,5 +1,5 @@
 const errorBox = document.querySelector(".form__error-box");
-import { error } from "@pnotify/core";
+import { alert } from "@pnotify/core";
 import "@pnotify/core/dist/BrightTheme.css";
 import "@pnotify/core/dist/PNotify.css";
 import getRefs from "./getRefs.js";
@@ -10,7 +10,7 @@ function errorMsgMarkUp() {
   const errorMsg = document.querySelector(".pnotify");
   if (!errorMsg) {
     refs.countriesList.innerHTML = "";
-    error(`Too many matches found.
+    alert(`Too many matches found.
     Please enter a more specific query!`);
   }
 }
