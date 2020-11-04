@@ -19,6 +19,10 @@ function onInputFieldFIll(e) {
       renderCountryCard(countries);
     })
     .catch(onFetchError);
+
+  if (searchQuery === "") {
+    alert("Для поиска введите название страны");
+  }
 }
 
 function onFetchError(error) {
